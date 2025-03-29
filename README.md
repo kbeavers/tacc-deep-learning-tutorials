@@ -46,7 +46,7 @@ To set up your Jupyter notebook kernel, follow these steps:
 
 4. Run the kernel installation script:
    ```bash
-   bash ./lemon-leaf-CNN-tutorial/scripts/install_kernel.sh
+   bash ./jellyfish-species-CNN-tutorial/scripts/install_kernel.sh
    ```
    This script sets up the Jupyter kernel required for running the CNN tutorial.
 
@@ -60,7 +60,7 @@ This project uses the [Jellyfish Species Dataset](https://www.kaggle.com/dataset
 The dataset is included in the repository as a ZIP file. To set up the dataset, run the following command:
 
 ```bash
-bash ./scripts/download_dataset.sh
+bash ./jellyfish-species-CNN-tutorial/scripts/download_dataset.sh
 ```
 
 This script will unzip the dataset into the `./data/jellyfish-species` directory.
