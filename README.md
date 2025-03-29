@@ -30,7 +30,7 @@ To set up your Jupyter notebook kernel, follow these steps:
 
 2. Load the necessary modules:
    ```bash
-   module load tacc apptainer
+   module load tacc-apptainer
    ```
 
 3. Pull the Docker container image:
