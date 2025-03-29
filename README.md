@@ -1,5 +1,5 @@
-# lemon-leaf-CNN-tutorial
-Tutorial for building a Convolutional Neural Network (CNN) for Lemon Leaf Disease (Image) Classification
+# jellyfish-species-CNN-tutorial
+Tutorial for building a Convolutional Neural Network (CNN) for Jellyfish Species (Image) Classification
 
 ## Setup
 
@@ -51,3 +51,21 @@ Finally, run ``download_dataset.sh`` to install the lemon leaf image dataset in 
 ```bash
 bash ./lemon-leaf-CNN-tutorial/scripts/download_dataset.sh
 ```
+
+## Dataset
+
+This project uses the (Jellyfish Species Dataset)[https://www.kaggle.com/datasets/anshtanwar/jellyfish-types]. The dataset contains various species of jellyfish and is used for classification tasks.
+
+### Dataset Setup
+
+The dataset is included in the repository as a ZIP file. To set up the dataset, run the following command:
+
+```bash
+bash ./scripts/download_dataset.sh
+```
+
+This script will unzip the dataset into the `./data/jellyfish-species` directory.
+
+### Note
+
+Ensure that the `jellyfish-species.zip` file is present in the `./data` directory before running the script.
