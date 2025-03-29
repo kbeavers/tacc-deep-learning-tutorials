@@ -17,14 +17,13 @@ cat <<EOL > ~/.local/share/jupyter/kernels/$KERNEL_DIR/kernel.json
     "--nv",
     "--bind",
     "/run/user:/run/user",
-    "/scratch/09794/kbeavers/lemon-leaf-cnn-ls6.sif",
+    "$SCRATCH/tf-cuda122-ls6.sif",
     "python3",
     "-m",
     "ipykernel_launcher",
     "--debug",
     "-f",
-    "{connection_file}",
-    "$SCRATCH/lemon-leaf-cnn-ls6.sif"  # This is the user-provided path
+    "{connection_file}"
   ]
 }
 EOL

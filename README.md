@@ -40,9 +40,9 @@ To set up your Jupyter notebook kernel, follow these steps:
 
 3. Pull the Docker container image:
    ```bash
-   apptainer pull docker://kbeavers/lemon-leaf-cnn-ls6:0.1
+   apptainer pull docker://kbeavers/tf-cuda122-ls6:0.1
    ```
-   This will create `lemon-leaf-cnn-ls6.sif` in your $SCRATCH directory.
+   This will create `tf-cuda122-ls6_0.1.sif` in your $SCRATCH directory.
 
 4. Run the kernel installation script:
    ```bash
