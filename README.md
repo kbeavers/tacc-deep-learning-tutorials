@@ -5,14 +5,14 @@ Tutorial for building a Convolutional Neural Network (CNN) for Jellyfish Species
 
 **Clone the Repo**
 
-First, log in to Lonestar6.
+First, log in to Frontera.
 ```
 ssh username@ls6.tacc.utexas.edu
 (username@ls6.tacc.utexas.edu) Password: 
 (username@ls6.tacc.utexas.edu) TACC Token Code:
 
 # ------------------------------------------------------------------------------
-# Welcome to the Lonestar6 Supercomputer
+# Welcome to the Frontera Supercomputer
 # Texas Advanced Computing Center, The University of Texas at Austin
 # ------------------------------------------------------------------------------
 ```
@@ -46,7 +46,8 @@ To set up your Jupyter notebook kernel, follow these steps:
 
 4. Run the kernel installation script:
    ```bash
-   bash ./jellyfish-species-CNN-tutorial/scripts/install_kernel.sh
+   cd jellyfish-species-CNN-tutorial
+   bash ./scripts/install_kernel.sh
    ```
    This script sets up the Jupyter kernel required for running the CNN tutorial.
 
@@ -60,7 +61,8 @@ This project uses the [Jellyfish Species Dataset](https://www.kaggle.com/dataset
 The dataset is included in the repository as a ZIP file. To set up the dataset, run the following command:
 
 ```bash
-bash ./jellyfish-species-CNN-tutorial/scripts/download_dataset.sh
+cd jellyfish-species-CNN-tutorial
+bash ./scripts/download_dataset.sh
 ```
 
 This script will unzip the dataset into the `./data/jellyfish-species` directory.
