@@ -57,10 +57,11 @@ This project uses images of three different coral species downloaded from iNatur
 
 ### Dataset Setup
 
-The dataset is included in the repository as a ZIP file. To set up the dataset, run the following command:
+The dataset is included in the repository as a ZIP file. To set up the dataset, run the following commands:
 
 ```bash
-bash ./coral-species-CNN-tutorial/scripts/download_dataset.sh
+cd coral-species-CNN-tutorial
+bash ./scripts/download_dataset.sh
 ```
 
 This script will unzip the dataset into the `./data/coral-species` directory.
