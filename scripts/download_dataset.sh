@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Unzip the dataset
-unzip ./data/jellyfish-species.zip
+unzip ./data/coral-species.zip
