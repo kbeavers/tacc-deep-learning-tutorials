@@ -61,7 +61,7 @@ bash ./scripts/download_dataset.sh
 ### a. Copy the tutorial notebook to your home directory
 
 ```bash
-cp ./tutorials/Coral-CNN.ipynb $HOME/
+cp ./tutorials/Coral-CNN-tutorial.ipynb $HOME/
 ```
 
 ### b. Access the [TACC Analysis Portal](https://tap.tacc.utexas.edu/jobs/) and configure your session as follows:
@@ -83,3 +83,16 @@ cp ./tutorials/Coral-CNN.ipynb $HOME/
  - Trust the kernel 
 
 Note: The kernel may take a few moments to initialize on first use.
+
+### d. Important – Following the Tutorial
+
+The `Coral-CNN-tutorial.ipynb` notebook is provided as a blank template for you to fill in as you work through the exercises. To complete this tutorial:
+
+1. Follow the step-by-step instructions at:
+   [https://life-sciences-ml-at-tacc.readthedocs.io/en/latest/section3/Hands-On-CNN.html](https://life-sciences-ml-at-tacc.readthedocs.io/en/latest/section3/Hands-On-CNN.html)
+
+2. Write the code from the ReadTheDocs page into the corresponding empty cells in your notebook.
+
+3. Execute each cell to build your CNN and see the results.
+
+If you get stuck, a completed solution is available in `Coral-CNN-solution.ipynb` within the `tutorials` directory of this repository, but we encourage you to try solving the exercises on your own first. 
