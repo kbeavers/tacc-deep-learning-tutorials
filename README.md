@@ -79,7 +79,7 @@ cp ./tutorials/Coral-CNN-tutorial.ipynb $HOME/
  - Click 'Submit' and wait for the job to start
  - Click 'Connect' when the a node becomes available
  - Open `Coral-CNN.ipynb` in your $HOME directory
- - Change your kernel to `tf-cuda101`
+ - Change your kernel to `tf-215`
  - Trust the kernel 
 
 Note: The kernel may take a few moments to initialize on first use.
