@@ -41,7 +41,7 @@ idev -m 20
 module load tacc-apptainer
 
 # Pull the Docker container image created for this tutorial
-apptainer pull docker://kbeavers/tf-cuda101-frontera:0.1
+apptainer pull docker://kbeavers/tf-215:frontera
 
 # Run the kernel setup script
 cd coral-species-CNN-tutorial
