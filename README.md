@@ -81,7 +81,7 @@ If you get stuck, a completed solution is available within the `tutorials` direc
  - Application: Jupyter Notebook
  - Project: <your-allocation>
  - Queue: rtx
- - Job Name: Deep-Learning-Training
+ - Job Name: DL-Training
  - Time Limit: 2:0:0
  - Reservation: <your-reservation> (or leave blank if no reservation)
 
