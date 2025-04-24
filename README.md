@@ -1,5 +1,6 @@
-# coral-species-CNN-tutorial
-Tutorial for building a Convolutional Neural Network (CNN) for coral species classification.
+# tacc-deep-learning-tutorials
+
+This repository contains hands-on tutorials and materials that accompany the [Deep Learning section](https://life-sciences-ml-at-tacc.readthedocs.io/en/latest/section3/overview.html) of the Life Sciences Machine Learning Institute at the [Texas Advanced Computing Center (TACC)](https://tacc.utexas.edu/). 
 
 ## 1. Accessing Frontera
 
@@ -22,7 +23,7 @@ Navigate to your scratch directory and clone this tutorial repository:
 
 ```bash
 cds # shortcut for cd #SCRATCH
-git clone git@github.com:kbeavers/coral-species-CNN-tutorial.git
+git clone git@github.com:kbeavers/tacc-deep-learning-tutorials.git
 ```
 
 ## 3. Environment Setup
@@ -41,10 +42,10 @@ idev -m 20
 module load tacc-apptainer
 
 # Pull the Docker container image created for this tutorial
-apptainer pull docker://kbeavers/tf-cuda101-frontera:0.1
+apptainer pull docker://kbeavers/tf-213:frontera
 
 # Run the kernel setup script
-cd coral-species-CNN-tutorial
+cd tacc-deep-learning-tutorials
 bash ./scripts/install_kernel.sh
 ```
 
@@ -58,11 +59,21 @@ bash ./scripts/download_dataset.sh
 
 ## 5. Launching the Tutorial
 
-### a. Copy the tutorial notebook to your home directory
+### a. Copy the tutorial notebooks to your home directory
 
 ```bash
+cp ./tutorials/Mushroom-ANN-tutorial.ipynb $HOME/
 cp ./tutorials/Coral-CNN-tutorial.ipynb $HOME/
 ```
+
+These notebooks are provided as blank templates for you to fill in as you work through the exercises. To complete this tutorial:
+
+ 1. Follow the step-by-step instructions on our [ReadTheDocs](https://life-sciences-ml-at-tacc.readthedocs.io/en/latest/section3/overview.html).
+ 2. Write the code from the ReadTheDocs page into the corresponding empty cells in your notebook.
+ 3. Execute each cell to build your ANN/CNN and see the results. 
+
+If you get stuck, a completed solution is available within the `tutorials` directory of this repository.
+
 
 ### b. Access the [TACC Analysis Portal](https://tap.tacc.utexas.edu/jobs/) and configure your session as follows:
 
@@ -70,7 +81,7 @@ cp ./tutorials/Coral-CNN-tutorial.ipynb $HOME/
  - Application: Jupyter Notebook
  - Project: <your-allocation>
  - Queue: rtx
- - Job Name: CNN-Training
+ - Job Name: Deep-Learning-Training
  - Time Limit: 2:0:0
  - Reservation: <your-reservation> (or leave blank if no reservation)
 
@@ -78,21 +89,8 @@ cp ./tutorials/Coral-CNN-tutorial.ipynb $HOME/
 
  - Click 'Submit' and wait for the job to start
  - Click 'Connect' when the a node becomes available
- - Open `Coral-CNN.ipynb` in your $HOME directory
- - Change your kernel to `tf-cuda101`
+ - Open `Mushroom-ANN-tutorial.ipynb` or `Coral-CNN-tutorial.ipynb` in your $HOME directory
+ - Change your kernel to `tf-213`
  - Trust the kernel 
 
 Note: The kernel may take a few moments to initialize on first use.
-
-### d. Important – Following the Tutorial
-
-The `Coral-CNN-tutorial.ipynb` notebook is provided as a blank template for you to fill in as you work through the exercises. To complete this tutorial:
-
-1. Follow the step-by-step instructions at:
-   [https://life-sciences-ml-at-tacc.readthedocs.io/en/latest/section3/Hands-On-CNN.html](https://life-sciences-ml-at-tacc.readthedocs.io/en/latest/section3/Hands-On-CNN.html)
-
-2. Write the code from the ReadTheDocs page into the corresponding empty cells in your notebook.
-
-3. Execute each cell to build your CNN and see the results.
-
-If you get stuck, a completed solution is available in `Coral-CNN-solution.ipynb` within the `tutorials` directory of this repository, but we encourage you to try solving the exercises on your own first. 
