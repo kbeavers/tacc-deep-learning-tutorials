@@ -23,7 +23,7 @@ Navigate to your scratch directory and clone this tutorial repository:
 
 ```bash
 cds # shortcut for cd #SCRATCH
-git clone git@github.com:kbeavers/tacc-deep-learning-tutorials.git
+git clone https://github.com/kbeavers/tacc-deep-learning-tutorials.git
 ```
 
 ## 3. Environment Setup
