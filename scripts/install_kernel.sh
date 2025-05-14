@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the kernel directory name
-KERNEL_DIR="tf-213" 
+KERNEL_DIR="Day3-tf-213" 
 
 # Create the directory
 mkdir -p ~/.local/share/jupyter/kernels/$KERNEL_DIR
@@ -9,7 +9,7 @@ mkdir -p ~/.local/share/jupyter/kernels/$KERNEL_DIR
 # Write the JSON content to the kernel directory
 cat <<EOL > ~/.local/share/jupyter/kernels/$KERNEL_DIR/kernel.json
 {
-  "display_name": "tf-213",
+  "display_name": "Day3-tf-213",
   "language": "python",
   "argv": [
     "/opt/apps/tacc-apptainer/1.3.3/bin/apptainer",

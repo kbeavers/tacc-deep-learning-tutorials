@@ -90,7 +90,7 @@ If you get stuck, a completed solution is available within the `tutorials` direc
  - Click 'Submit' and wait for the job to start
  - Click 'Connect' when the a node becomes available
  - Open `Mushroom-ANN-tutorial.ipynb` or `Coral-CNN-tutorial.ipynb` in your $HOME directory
- - Change your kernel to `tf-213`
+ - Change your kernel to `Day3-tf-213`
  - Trust the kernel 
 
 Note: The kernel may take a few moments to initialize on first use.
